@@ -1,0 +1,5 @@
+# Ignore Gemini metadata and temporary files
+.gemini/
+New folder/
+scratch/
+*.metadata.json

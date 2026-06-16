@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>นิยายข้ามมิติมาเป็นเจ้าเมือง | พอร์ทัลข้อมูลเจ้าสำนักกระบี่ดาวเหนือ</title>
+    <meta name="description" content="สัมผัสประสบการณ์อ่านนิยายกำลังภายในแนวสร้างเมืองรูปแบบใหม่พร้อมภาพประกอบ 2D สวยงาม! ติดตามการเดินทางของหลินเทียนเจ้าสำนักกระบี่ดาวเหนือจัดระเบียบเมืองหมอกสวรรค์">
+    <meta name="keywords" content="นิยายกำลังภายใน, นิยายข้ามมิติ, เจ้าสำนัก, กระบี่ดาวเหนือ, ระดับลมปราณ, พรรคกระยาจก, สำนักกระบี่เงาโลหิต, ค่ายเสือทะยาน, นิยายสร้างเมือง">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand-section">
+                <div class="brand-logo">ดาวเหนือ</div>
+                <div class="brand-title">กระบี่ดาวเหนือสร้างเมือง</div>
+                <div class="brand-subtitle">Heavenly Mist City Portal</div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-target="home-view">
+                    <i class="fa-solid fa-compass"></i>
+                    <span>หน้าแรก & บทนำ</span>
+                </a>
+                <a href="#" class="nav-item" data-target="reader-view">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>อ่านบทนิยาย</span>
+                </a>
+                <a href="#" class="nav-item" data-target="wiki-view">
+                    <i class="fa-solid fa-scroll"></i>
+                    <span>ตำรากำลังภายใน</span>
+                </a>
+                <a href="#" class="nav-item" data-target="dashboard-view">
+                    <i class="fa-solid fa-chess-rook"></i>
+                    <span>แผงควบคุมเจ้าเมือง</span>
+                </a>
+                <a href="#" class="nav-item" data-target="gallery-view">
+                    <i class="fa-solid fa-images"></i>
+                    <span>คลังภาพบันทึก</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="system-badge">
+                    <div class="system-badge-title">Lord System v1.5</div>
+                    <div class="system-badge-version">ซีซัน 1: แดนภูธรล้อมป้อม</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- VIEW 1: HOME / INTRODUCTION -->
+            <section id="home-view" class="content-view active">
+                <div class="art-banner">
+                    <img src="assets/heavenly_mist_city.png" alt="เมืองหมอกสวรรค์" onerror="this.src='https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=1200&auto=format&fit=crop'">
+                    <div class="art-banner-caption">
+                        <h1>เมืองหมอกสวรรค์ (Heavenly Mist City)</h1>
+                        <p>ฐานที่มั่นแห่งใหม่ของสำนักกระบี่ดาวเหนือ บัญชาการโดยเจ้าสำนักหลินเทียน</p>
+                    </div>
+                </div>
+                
+                <div class="intro-grid">
+                    <div class="intro-card">
+                        <h2>บทนำเรื่องย่อ</h2>
+                        <p><strong>หลินเทียน (Lin Tian)</strong> ชายหนุ่มยุคใหม่ได้ข้ามมิติมาสวมร่างของ <strong>เจ้าสำนักกระบี่ดาวเหนือ (Northern Dipper Sword Sect)</strong> พรรคกำลังภายในระดับเล็กที่เหลือรอดเพียง 20 คน เขาต้องพาศิษย์เข้ามาตั้งฐานที่มั่นและฟื้นฟู <strong>เมืองหมอกสวรรค์</strong> เมืองชายแดนห่างไกลรกร้าง เพื่อขยายพรรคและรับสิทธิ์บงการเมืองในฐานะเจ้าเมือง!</p>
+                        <p>เมืองนี้ตั้งอยู่ชายขอบยุทธภพรายล้อมไปด้วยขั้วอำนาจระดับท็อปของแผ่นดินอย่าง <strong>เส้าหลิน, บู๊ตึ๊ง, และ ง้อไบ๊</strong> ทว่าภัยประชิดตัวของเขาในชายแดนนี้คือการเอาตัวรอดท่ามกลางการแก่งแย่งของ <strong>15 พรรคขนาดย่อมและกลาง</strong> (สมาชิก 10 ถึง 100 คน) เช่น ค่ายเสือทะยาน หรือศัตรูร้ายสำนักกระบี่เงาโลหิต โลกนี้มีเพียงเผ่ามนุษย์และสัตว์ป่าตามธรรมชาติเท่านั้น</p>
+                        <p>ร่วมผจญภัยไปกับการชิงชัยเหมืองหินแร่ บูรณะกำแพงป้องกันค่ายกล และก่อตั้งระบบชลประทานในรูปแบบนิยายกึ่งบริหารผังเมืองยุทธภพ!</p>
+                    </div>
+                    
+                    <div class="intro-card" style="border-color: var(--color-primary);">
+                        <h2>ฟีเจอร์เด่นในพอร์ทัล</h2>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">1</div>
+                                <div class="feature-text">
+                                    <h4>ระบบเจ้าสำนักบริหาร</h4>
+                                    <p>จำลองทรัพยากรเมือง แร่เหล็ก เสบียงข้าวสาร และกำลังคนอิงตามบทนำนิยาย</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">2</div>
+                                <div class="feature-text">
+                                    <h4>ทำเนียบสำนักยุทธภพ</h4>
+                                    <p>รวบรวมทั้ง 8 สำนักใหญ่ระดับท็อป และ 15 พรรคภูธรขนาด 10-100 คน</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">3</div>
+                                <div class="feature-text">
+                                    <h4>บูรณะปัญหา 300 ข้อ</h4>
+                                    <p>ชำระปัญหาน้ำ ขยะ เสบียง และกำแพงเมืองที่ถูกขบวนโจรและพรรคอริก่อกวน</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 2: WEB NOVEL READER -->
+            <section id="reader-view" class="content-view">
+                <div class="reader-container">
+                    <!-- Clean Reader Action Buttons -->
+                    <div class="reader-action-bar">
+                        <button class="btn-pill" id="toggle-settings-btn" title="ปรับแต่งแบบอักษรและพื้นหลัง">
+                            <i class="fa-solid fa-sliders"></i> ปรับแต่งการอ่าน
+                        </button>
+                        <button class="btn-pill" id="toggle-stats-btn" title="แสดงสถานะเสบียงและแร่เหล็กของเมือง">
+                            <i class="fa-solid fa-chart-simple"></i> สถานะเมืองยามนี้
+                        </button>
+                        <button class="btn-pill" id="copy-tts-btn" title="คัดลอกบทพากย์สำหรับพากย์เสียงด้วย Clipchamp">
+                            <i class="fa-solid fa-microphone-lines"></i> คัดลอกบทพากย์เสียง
+                        </button>
+                    </div>
+
+                    <div class="reader-settings collapsed" id="reader-settings-panel">
+                        <div class="settings-group">
+                            <span class="settings-label">โทนสีอ่าน:</span>
+                            <div class="theme-dot dark active" data-theme="dark" title="โหมดมืด"></div>
+                            <div class="theme-dot warm" data-theme="warm" title="โหมดถนอมสายตา"></div>
+                            <div class="theme-dot light" data-theme="light" title="โหมดสว่าง"></div>
+                        </div>
+                        
+                        <div class="settings-group">
+                            <span class="settings-label">ขนาดอักษร:</span>
+                            <button class="btn-pill" id="font-dec-btn">A-</button>
+                            <span id="font-size-label" style="font-weight: 500; font-size: 0.9rem;">18px</span>
+                            <button class="btn-pill" id="font-inc-btn">A+</button>
+                        </div>
+
+                        <div class="settings-group">
+                            <span class="settings-label">ความกว้าง:</span>
+                            <button class="btn-pill" id="width-narrow-btn">แคบ</button>
+                            <button class="btn-pill active" id="width-wide-btn">กว้าง</button>
+                        </div>
+                    </div>
+
+                    <!-- Reader Header Resources -->
+                    <div id="reader-stats-text" class="reader-stats collapsed">
+                        <!-- Dynamic stats loaded from JS -->
+                    </div>
+
+                    <!-- Reader Body -->
+                    <article class="reader-body">
+                        <div id="reader-title"></div>
+                        <div id="reader-content"></div>
+                    </article>
+
+                    <!-- Chapter Navigation -->
+                    <div class="chapter-nav">
+                        <button class="chapter-btn" id="prev-chapter-btn">
+                            <i class="fa-solid fa-chevron-left"></i> ตอนก่อนหน้า
+                        </button>
+                        <div class="chapter-select-container">
+                            <select id="chapter-select" class="chapter-dropdown">
+                                <!-- Dynamic options loaded from JS -->
+                            </select>
+                        </div>
+                        <button class="chapter-btn" id="next-chapter-btn">
+                            ตอนถัดไป <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 3: LORE & WIKI -->
+            <section id="wiki-view" class="content-view">
+                <div class="wiki-container">
+                    <div>
+                        <h1>คัมภีร์ข้อมูลยุทธจักร (Wiki Codex)</h1>
+                        <p style="color: var(--text-secondary);">บันทึกระดับลมปราณ การหลอมอาวุธ จิตวิญญาณ และทำเนียบพรรคกำลังภายในระดับแผ่นดินและระดับภูธร</p>
+                    </div>
+
+                    <div class="tab-nav">
+                        <button class="tab-btn active" data-tab="tab-realms">ระดับลมปราณ</button>
+                        <button class="tab-btn" data-tab="tab-alchemists">ระดับการหลอม</button>
+                        <button class="tab-btn" data-tab="tab-souls">จิตวิญญาณ</button>
+                        <button class="tab-btn" data-tab="tab-monsters">สัตว์อสูร & ศัตรู</button>
+                        <button class="tab-btn" data-tab="tab-great-sects">สำนักใหญ่ยุทธภพ</button>
+                        <button class="tab-btn" data-tab="tab-local-sects">15 สำนักภูธร</button>
+                    </div>
+
+                    <!-- Tab 1: Realms -->
+                    <div id="tab-realms" class="tab-content-panel active">
+                        <div class="wiki-grid" id="realms-grid">
+                            <!-- Dynamic rendering from app.js -->
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Alchemists -->
+                    <div id="tab-alchemists" class="tab-content-panel">
+                        <div class="wiki-grid" id="alchemists-grid">
+                            <!-- Dynamic rendering from app.js -->
+                        </div>
+                    </div>
+
+                    <!-- Tab 3: Souls -->
+                    <div id="tab-souls" class="tab-content-panel">
+                        <div class="wiki-grid" id="souls-grid">
+                            <!-- Dynamic rendering from app.js -->
+                        </div>
+                    </div>
+
+                    <!-- Tab 4: Monsters -->
+                    <div id="tab-monsters" class="tab-content-panel">
+                        <div class="wiki-grid" id="monsters-grid">
+                            <!-- Dynamic rendering from app.js -->
+                        </div>
+                    </div>
+
+                    <!-- Tab 5: Great Sects -->
+                    <div id="tab-great-sects" class="tab-content-panel">
+                        <div class="wiki-grid" id="great-sects-grid">
+                            <!-- Dynamic rendering from app.js -->
+                        </div>
+                    </div>
+
+                    <!-- Tab 6: Local Sects -->
+                    <div id="tab-local-sects" class="tab-content-panel">
+                        <div class="wiki-grid" id="local-sects-grid">
+                            <!-- Dynamic rendering from app.js -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 4: LORD'S SYSTEM DASHBOARD -->
+            <section id="dashboard-view" class="content-view">
+                <!-- Dashboard Header -->
+                <div class="dash-header">
+                    <div class="dash-owner">
+                        <div class="dash-avatar-shield">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="dash-owner-info">
+                            <h3>หลินเทียน (Lin Tian)</h3>
+                            <span>เจ้าสำนักกระบี่ดาวเหนือ & เจ้าเมืองหมอกสวรรค์ | จิตวิญญาณ: Core Essence Saint</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="wiki-rank-badge gold"><i class="fa-solid fa-crown"></i> ระบบบริหารเมืองจำลอง</span>
+                    </div>
+                </div>
+
+                <!-- Stats Rows -->
+                <div class="dash-stats-row">
+                    <div class="stat-box" id="stat-box-iron">
+                        <div class="stat-label"><i class="fa-solid fa-cubes"></i> แร่เหล็กสะสม</div>
+                        <div class="stat-val" id="stat-iron">820</div>
+                        <div class="stat-label">หน่วยแร่ดิบ</div>
+                    </div>
+                    <div class="stat-box" id="stat-box-food">
+                        <div class="stat-label"><i class="fa-solid fa-wheat-awn"></i> เสบียงอาหาร</div>
+                        <div class="stat-val" id="stat-food">15 วัน</div>
+                        <div class="stat-label">ระยะความคงอยู่</div>
+                    </div>
+                    <div class="stat-box danger" id="stat-box-security">
+                        <div class="stat-label"><i class="fa-solid fa-heart-shield"></i> ความปลอดภัย</div>
+                        <div class="stat-val" id="stat-security">45%</div>
+                        <div class="stat-label">กำแพง & การป้องกัน</div>
+                    </div>
+                    <div class="stat-box" id="stat-box-population">
+                        <div class="stat-label"><i class="fa-solid fa-users"></i> ชาวเมือง</div>
+                        <div class="stat-val" id="stat-population">1240 คน</div>
+                        <div class="stat-label">ประชากรรวม</div>
+                    </div>
+                </div>
+
+                <!-- Reincarnation Cosmic Stats Rows -->
+                <div class="dash-stats-row cosmic-row" style="margin-top: -15px; margin-bottom: 30px;">
+                    <div class="stat-box cosmic" id="stat-box-loop">
+                        <div class="stat-label"><i class="fa-solid fa-arrows-spin"></i> สังสารวัฏจุติใหม่</div>
+                        <div class="stat-val" id="stat-loop">1</div>
+                        <div class="stat-label">รอบชาติภพจุติ</div>
+                    </div>
+                    <div class="stat-box cosmic" id="stat-box-age">
+                        <div class="stat-label"><i class="fa-solid fa-hourglass-half"></i> อายุปัจจุบัน / อายุขัย</div>
+                        <div class="stat-val" id="stat-age">16 / 120 ปี</div>
+                        <div class="stat-label">เติบโตเพื่อทวงคืนสำนัก</div>
+                    </div>
+                    <div class="stat-box cosmic" id="stat-box-rank">
+                        <div class="stat-label"><i class="fa-solid fa-star-half-stroke"></i> อันดับสำนักยุทธจักร</div>
+                        <div class="stat-val" id="stat-rank">อันดับที่ 18</div>
+                        <div class="stat-label">เป้าหมายสูงสุด: อันดับที่ 1</div>
+                    </div>
+                    <div class="stat-box cosmic" id="stat-box-aura">
+                        <div class="stat-label"><i class="fa-solid fa-wand-magic-sparkles"></i> พลังวิญญาณสะสม</div>
+                        <div class="stat-val" id="stat-aura">0</div>
+                        <div class="stat-label">แต้มดาราสะสมข้ามลูป</div>
+                    </div>
+                </div>
+
+                <!-- Main Grid -->
+                <div class="dash-main-grid">
+                    <!-- Left side: Actions and Quests -->
+                    <div>
+                        <div class="dash-panel">
+                            <h3><i class="fa-solid fa-gavel"></i> สั่งการเจ้าสำนัก (Sect Orders)</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 20px;">บริหารคลังเก็บวัสดุและสั่งการช่างเหล็กเพื่อฟื้นฟูรากฐาน</p>
+                            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                                <button class="chapter-btn" id="btn-mine-iron" style="background: rgba(229, 193, 88, 0.1); border-color: var(--color-gold);">
+                                    <i class="fa-solid fa-hammer"></i> สั่งคนงานขุดแร่เหล็ก
+                                </button>
+                                <button class="chapter-btn" id="btn-buy-food" style="background: rgba(46, 125, 50, 0.15); border-color: var(--color-secondary);">
+                                    <i class="fa-solid fa-cart-shopping"></i> ซื้อเสบียง (ใช้แร่ 100)
+                                </button>
+                                <button class="chapter-btn" id="btn-reincarnate" style="background: rgba(106, 27, 154, 0.15); border-color: #b388ff; color: #e1bee7;">
+                                    <i class="fa-solid fa-arrows-spin"></i> จุติใหม่ข้ามชาติภพ (ทารก)
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="dash-panel">
+                            <h3><i class="fa-solid fa-list-check"></i> ภารกิจหลักซีซัน (Season Quests)</h3>
+                            
+                            <div class="quest-item">
+                                <div class="quest-title">1. ฟื้นฟูสุขาภิบาลน้ำดื่ม (ประสานสำนักหญ้าโอสถ)</div>
+                                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0;">ฟื้นฟูบ่อน้ำเก่าและชลประทาน ร่วมกับศิษย์สำนักหญ้าโอสถที่ถนัดปรุงยา (แก้ปัญหาข้อ 14 และ 215)</p>
+                                <div class="quest-rewards">รางวัล: ปลดล็อกน้ำสะอาดชลประทาน, ข้าวสารเพิ่มขึ้น</div>
+                            </div>
+                            
+                            <div class="quest-item" style="border-left-color: var(--color-primary);">
+                                <div class="quest-title" style="color: var(--color-primary);">2. กู้คืนเหมืองหุบเขาเหนือ (กระบี่เงาโลหิต Rank C)</div>
+                                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0;">กำราบยอดฝีมือสำนักกระบี่เงาโลหิตที่เปิดใช้งานค่ายกลศิลาเพื่อปิดกั้นและขัดขวางการทำเหมืองเหล็กดิบ (แก้ปัญหาข้อ 329)</p>
+                                <div class="quest-rewards" style="color: var(--color-gold);">รางวัล: เหมืองเปิด 100%, ได้รับแร่สะสมดิบ +500 หน่วย</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right side: Solving specific problems from the 300+ list -->
+                    <div class="dash-panel" style="max-height: 575px; overflow-y: auto;">
+                        <h3>
+                            <span><i class="fa-solid fa-circle-exclamation"></i> บัญชีขจัดปัญหาเมือง</span>
+                            <span style="font-size: 0.8rem; color: var(--color-primary);">ดึงจากปัญหา 300+ ข้อ</span>
+                        </h3>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 15px;">คลิกแก้ไขความเดือดร้อนของชาวเมืองด้วยแร่เหล็กที่รวบรวมมาได้เพื่ออัปเกรดสถานะเมือง</p>
+                        <div id="dashboard-problems-list">
+                            <!-- Dynamic problems list from app.js -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 5: ART GALLERY -->
+            <!-- VIEW 5: ART GALLERY -->
+            <section id="gallery-view" class="content-view">
+                <div>
+                    <h1>คลังภาพบันทึกพรมแดน (Illustrated Archives)</h1>
+                    <p style="color: var(--text-secondary); margin-bottom: 30px;">
+                        ภาพประกอบสไตล์ 2D สวยงาม เน้นฉากหลัง อาวุธ และสิ่งของ โดย<strong>ละเว้นใบหน้าตัวละคร</strong>เพื่อเพิ่มจินตนาการให้ผู้อ่าน
+                    </p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-card">
+                        <div class="gallery-img-container">
+                            <img src="assets/heavenly_mist_city.png" alt="เมืองหมอกสวรรค์" onerror="this.src='https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=600&auto=format&fit=crop'">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>1. เมืองหมอกสวรรค์ยามสนธยา</h4>
+                            <p>ภาพทิวทัศน์หุบเขาที่โอบล้อมเมืองโบราณ 2D สวยงาม ท่ามกลางม่านหมอกสีเทาอ่อนลอยต่ำเป็นเอกลักษณ์ของดินแดนนี้ เหมาะสมเป็นฉากตั้งเมือง</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-img-container">
+                            <img src="assets/alchemy_furnace.png" alt="เตาหลอมโอสถค่ายกล" onerror="this.src='https://images.unsplash.com/photo-1598462047970-ab22c66d2f4a?q=80&w=600&auto=format&fit=crop'">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>2. เตาเพลิงสมุนไพรและจิตวิญญาณ</h4>
+                            <p>เตาหลอมโลหะสลักค่ายกลอักขระป้องกันส่องแสงสีเหลืองทอง พร้อมเปลวไฟสีเขียวหยกกระพือพัด บ่งบอกถึงการหลอมสร้างอุปกรณ์ระดับสูง</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-img-container">
+                            <img src="assets/stone_troll.png" alt="กลไกค่ายกลศิลา" onerror="this.src='https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=600&auto=format&fit=crop'">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>3. หุ่นกลไกศิลาผู้พิทักษ์</h4>
+                            <p>ผู้พิทักษ์หินยักษ์ที่มีผิวสัมผัสศิลากรวดหยาบกร้าน ดวงตาเรืองแสงสีม่วงเร้นลับ ร่างกายถักทอจากโครงศิลากลไกโบราณสยบศัตรู</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-img-container">
+                            <img src="assets/runic_shield_sword.png" alt="ดาบและโล่อักขระค่ายกล" onerror="this.src='https://images.unsplash.com/photo-1534067783941-51c9c23eccfd?q=80&w=600&auto=format&fit=crop'">
+                        </div>
+                        <div class="gallery-info">
+                            <h4>4. ดาบและโล่อักขระค่ายกลป้องกัน</h4>
+                            <p>ดาบเหล็กกล้าแกร่งสลักลายเซ็นค่ายกล พร้อมโล่ป้องกันปราณที่หลอมขึ้นเพื่อใช้คุ้มภัยชาวเมืองจากภัยคุกคามรอบทิศ</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Interactive System Modal -->
+    <div class="modal" id="system-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeSystemModal()">&times;</button>
+            <div class="modal-title" id="modal-title-text">หัวข้อระบบ</div>
+            <div id="modal-body-content" style="line-height: 1.6;">
+                เนื้อความจำลอง...
+            </div>
+            <div style="margin-top: 25px; text-align: right;">
+                <button class="chapter-btn" onclick="closeSystemModal()">รับทราบคำสั่ง</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Files -->
+    <script src="app.js"></script>
+</body>
+</html>
