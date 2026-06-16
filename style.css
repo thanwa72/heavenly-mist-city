@@ -1029,30 +1029,38 @@ body.mode-light .chapter-dropdown {
         width: 100%;
         border-right: none;
         border-bottom: 1px solid var(--border-color);
-        padding: 15px;
+        padding: 12px 10px;
         flex-direction: column;
         align-items: stretch;
-        gap: 12px;
+        gap: 10px;
         height: auto;
+        background: linear-gradient(180deg, #121217 0%, #0d0d11 100%);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
     .brand-section {
         border-bottom: none;
         padding-bottom: 0;
         flex-direction: row;
-        gap: 10px;
+        gap: 8px;
         text-align: left;
         justify-content: center;
         width: 100%;
     }
     .brand-title {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--color-gold);
+        letter-spacing: 0.5px;
+        text-shadow: 0 0 10px rgba(229, 193, 88, 0.3);
         white-space: nowrap;
     }
     .brand-logo {
-        width: 36px;
-        height: 36px;
-        font-size: 1.1rem;
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
         margin-bottom: 0;
+        box-shadow: 0 0 10px rgba(217, 56, 58, 0.4);
     }
     .brand-subtitle {
         display: none;
@@ -1062,23 +1070,57 @@ body.mode-light .chapter-dropdown {
         overflow-x: auto;
         width: 100%;
         justify-content: flex-start;
-        gap: 6px;
-        padding-bottom: 4px;
+        gap: 8px;
+        padding: 4px 5px;
         flex-wrap: nowrap;
         -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Hide default scrollbar on Firefox */
+    }
+    .sidebar-nav::-webkit-scrollbar {
+        display: none; /* Hide default scrollbar on Chrome/Safari */
     }
     .nav-item {
-        padding: 8px 12px;
-        font-size: 0.85rem;
-        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 8px 14px;
+        font-size: 0.82rem;
+        font-weight: 500;
+        color: var(--text-secondary);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 20px;
         white-space: nowrap;
         flex-shrink: 0;
+        transition: all 0.25s ease;
+    }
+    .nav-item i {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        transition: all 0.25s ease;
+    }
+    .nav-item:hover {
+        color: var(--color-gold);
+        background: rgba(229, 193, 88, 0.05);
+        border-color: rgba(229, 193, 88, 0.15);
+        transform: translateY(-1px);
+    }
+    .nav-item.active {
+        color: #121217;
+        background: linear-gradient(135deg, var(--color-gold) 0%, #d4af37 100%);
+        border-color: #d4af37;
+        box-shadow: 0 4px 10px rgba(212, 175, 55, 0.2);
+    }
+    .nav-item.active i {
+        color: #121217;
     }
     .sidebar-footer {
         display: none;
     }
     .main-content {
-        height: calc(100vh - 110px);
+        height: calc(100vh - 100px);
     }
     .content-view {
         padding: 15px;
