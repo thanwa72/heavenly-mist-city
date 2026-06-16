@@ -1704,7 +1704,6 @@ let solvedProblems = [];
 // Initialize Page
 document.addEventListener("DOMContentLoaded", () => {
     setupNavigation();
-    setupMobileMenu();
     setupReaderSettings();
     renderChapter();
     renderWiki();
@@ -2296,87 +2295,3 @@ window.addEventListener("click", (e) => {
         closeSystemModal();
     }
 });
-
-// Mobile Menu Navigation Logic
-function setupMobileMenu() {
-    const mobileMenuItems = document.querySelectorAll(".mobile-menu-item");
-    const views = document.querySelectorAll(".content-view");
-    const backBar = document.getElementById("mobile-back-bar");
-    const backBtn = document.getElementById("btn-back-to-menu");
-    const titleSpan = document.getElementById("mobile-title-span");
-    
-    // Check if on mobile initially
-    if (window.innerWidth <= 992) {
-        switchToMobileMenu();
-    }
-    
-    window.addEventListener("resize", () => {
-        if (window.innerWidth <= 992) {
-            if (!document.body.classList.contains("mobile-menu-active") && !document.body.classList.contains("mobile-view-active")) {
-                switchToMobileMenu();
-            }
-        } else {
-            // Restore desktop state
-            document.body.classList.remove("mobile-menu-active", "mobile-view-active");
-            if (backBar) backBar.classList.remove("active");
-            // Reactivate active desktop view
-            const activeNav = document.querySelector(".nav-item.active");
-            if (activeNav) {
-                const target = activeNav.getAttribute("data-target");
-                views.forEach(v => {
-                    if (v.id === target) v.classList.add("active");
-                    else v.classList.remove("active");
-                });
-            }
-        }
-    });
-
-    mobileMenuItems.forEach(item => {
-        item.addEventListener("click", () => {
-            const targetId = item.getAttribute("data-target");
-            
-            views.forEach(v => v.classList.remove("active"));
-            const targetView = document.getElementById(targetId);
-            if (targetView) targetView.classList.add("active");
-            
-            // Sync with desktop sidebar nav active state
-            const navItems = document.querySelectorAll(".nav-item");
-            navItems.forEach(n => {
-                if (n.getAttribute("data-target") === targetId) {
-                    n.classList.add("active");
-                } else {
-                    n.classList.remove("active");
-                }
-            });
-            
-            document.body.classList.remove("mobile-menu-active");
-            document.body.classList.add("mobile-view-active");
-            if (backBar) backBar.classList.add("active");
-            
-            // Set mobile title
-            let viewTitle = "นิยายข้ามมิติ";
-            if (targetId === "reader-view") viewTitle = "อ่านบทนิยาย";
-            else if (targetId === "wiki-view") viewTitle = "ตำรากำลังภายใน";
-            else if (targetId === "dashboard-view") viewTitle = "แผงควบคุมเจ้าเมือง";
-            if (titleSpan) titleSpan.innerText = viewTitle;
-            
-            document.querySelector(".main-content").scrollTop = 0;
-        });
-    });
-    
-    if (backBtn) {
-        backBtn.addEventListener("click", () => {
-            switchToMobileMenu();
-        });
-    }
-    
-    function switchToMobileMenu() {
-        views.forEach(v => v.classList.remove("active"));
-        const menuView = document.getElementById("mobile-menu-view");
-        if (menuView) menuView.classList.add("active");
-        
-        document.body.classList.add("mobile-menu-active");
-        document.body.classList.remove("mobile-view-active");
-        if (backBar) backBar.classList.remove("active");
-    }
-}
