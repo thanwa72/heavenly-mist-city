@@ -478,6 +478,16 @@ p {
     letter-spacing: 0.15px;
 }
 
+#reader-title h2 {
+    font-family: var(--font-heading);
+    font-size: 1.65rem;
+    color: var(--color-gold);
+    line-height: 1.4;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 12px;
+}
+
 .reader-body h3 {
     font-family: var(--font-heading);
     font-size: 1.45rem;
@@ -1019,11 +1029,10 @@ body.mode-light .chapter-dropdown {
         width: 100%;
         border-right: none;
         border-bottom: 1px solid var(--border-color);
-        padding: 15px 20px;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
+        padding: 15px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
         height: auto;
     }
     .brand-section {
@@ -1032,11 +1041,17 @@ body.mode-light .chapter-dropdown {
         flex-direction: row;
         gap: 10px;
         text-align: left;
+        justify-content: center;
+        width: 100%;
+    }
+    .brand-title {
+        font-size: 1.15rem;
+        white-space: nowrap;
     }
     .brand-logo {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
         margin-bottom: 0;
     }
     .brand-subtitle {
@@ -1045,20 +1060,25 @@ body.mode-light .chapter-dropdown {
     .sidebar-nav {
         flex-direction: row;
         overflow-x: auto;
-        width: auto;
-        flex-grow: 0;
-        gap: 5px;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 6px;
+        padding-bottom: 4px;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
     }
     .nav-item {
         padding: 8px 12px;
         font-size: 0.85rem;
         border-radius: 8px;
+        white-space: nowrap;
+        flex-shrink: 0;
     }
     .sidebar-footer {
         display: none;
     }
     .main-content {
-        height: calc(100vh - 80px);
+        height: calc(100vh - 110px);
     }
     .content-view {
         padding: 15px;
@@ -1066,6 +1086,22 @@ body.mode-light .chapter-dropdown {
     .reader-container {
         padding: 24px;
         max-width: 100% !important;
+    }
+    .reader-action-bar {
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    .reader-action-bar .btn-pill {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    #reader-title h2 {
+        font-size: 1.3rem;
+        line-height: 1.4;
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 15px;
     }
     .intro-grid {
         grid-template-columns: 1fr;
